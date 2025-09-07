@@ -3,12 +3,12 @@
 
 /* ----------  DESIGN TOKENS  ---------- */
 :root {
-  --color-bg:        #F2FFF8;  /* mint cream */
-  --color-primary:   #5EB78F;  /* fresh jade green */
-  --color-accent:    #A3DA8D;  /* pale lime green */
-  --color-text-main: #052E27;  /* deep green */
+  --color-bg:        #ECE3D4;  /* bone */
+  --color-primary:   #FFA552;  /* sandy brown */
+  --color-accent:    #FCDE9C;  /* peach yellow */
+  --color-text-main: #BA5624;  /* burnt orange */
   --color-highlight: #FDF6EC;  /* soft warm white */
-  --color-deep:      #327470;  /* myrtle green */
+  --color-deep:      #605770;  /* english violet */
 
   --wrapper-height: 87vh;
   --image-max-width: 300px;
