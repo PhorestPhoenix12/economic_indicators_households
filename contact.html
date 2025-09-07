@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        // JavaScript to add active class to the current navigation link
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll("nav ul li a");
+            var currentFile = window.location.pathname.split("/").pop();
+
+            for (var i = 0; i < links.length; i++) {
+                var linkFile = links[i].href.split("/").pop();
+                if (linkFile === currentFile) {
+                    links[i].classList.add("active");
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 style="color: #fff;">AP MacroCharts: Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="unitOne.html">Unit 1</a></li>
+                <li><a href="unitTwo.html">Unit 2</a></li>
+                <li><a href="unitThree.html">Unit 3</a></li>
+                <li><a href="unitFour.html">Unit 4</a></li>
+                <li><a href="unitFive.html">Unit 5</a></li>
+                <li><a href="unitSix.html">Unit 6</a></li>
+                <li><a href="households.html">Households</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>If you want to see more information added, see more terms that could be represented, or see room for improvement, my email is below:</p>
+            <ul>
+                <li>Email: 1235laney@gmail.com</li>
+            </ul>
+        </div>
+
+            <h4 style="text-align: center;">
+                To share with your friends:
+            </h4>
+            <h3 style="text-align: center;">
+                QR Code
+            </h3>
+        </div> 
+        
+    <div style="text-align: center; padding: 20px;">
+        <h2>Scan to Visit This Website</h2>
+        <img src="qr-code-71872311.png" alt="QR Code to site" width="200">
+    </div>
+
+            
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 APMacroCharts. All rights reserved.</p>
+    </footer>
+</body>
+</html>

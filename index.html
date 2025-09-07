@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AP Macro Charts</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      /* Add CSS styles hci people */
+      
+    </style>
+    <script>
+      // JavaScript to add active class to the current nav link
+      document.addEventListener("DOMContentLoaded", function () {
+        var links = document.querySelectorAll("nav ul li a");
+        var currentFile = window.location.pathname.split("/").pop();
+
+        for (var i = 0; i < links.length; i++) {
+          var linkFile = links[i].href.split("/").pop();
+          if (linkFile === currentFile) {
+            links[i].classList.add("active");
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: #fff">Hello AP Macro Students!</h1>
+      <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="unitOne.html">Unit 1</a></li>
+            <li><a href="unitTwo.html">Unit 2</a></li>
+            <li><a href="unitThree.html">Unit 3</a></li>
+            <li><a href="unitFour.html">Unit 4</a></li>
+            <li><a href="unitFive.html">Unit 5</a></li>
+            <li><a href="unitSix.html">Unit 6</a></li>
+            <li><a href="households.html">Households</a></li>          
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+<main>
+      <!-- Add some page content here -->
+      <img src="https://3.files.edl.io/bbf0/22/05/13/194439-078206ef-4811-4769-abb5-9bdd667f8c07.jpg" >
+   <section>
+       <h2>AP Macro principles in real time</h2>
+      <p> If you're reading this, you're most likely a high school student taking AP Macroeconomics — good for you! While this class can be challenging, it introduces you to vital skills, knowledge, and resources that you can apply in real life. From improving your financial literacy to building a strong foundation in economics, the gains from this course can benefit you in countless ways.</p>
+     <p>As a fellow AP Macroeconomics student, I thought it would be helpful to see the real-world impact of the concepts we learn. During COVID-19, how much did employment drop? How much has GDP grown in the past year? These are just a few of the many questions that might come up as we study macroeconomics.
+     This website is my attempt to help answer some of those questions. Using data from the Federal Reserve Bank of St. Louis (FRED), I’ve compiled graphs and charts that connect directly to the terms and topics we cover in class. That way, we can see how concepts that might seem purely theoretical — like GDP, inflation, or interest rates — actually play out in the real world.</p>
+
+  </section>
+</main>
+
+    
+    <footer>
+      <p>&copy; 2024 APMacroCharts. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+

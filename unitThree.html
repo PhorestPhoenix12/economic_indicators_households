@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        // Js to give active class to the nav link
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll("nav ul li a");
+            var currentFile = window.location.pathname.split("/").pop();
+
+            for (var i = 0; i < links.length; i++) {
+                var linkFile = links[i].href.split("/").pop();
+                if (linkFile === currentFile) {
+                    links[i].classList.add("active");
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="welcome-head" style="color: #fff;">Unit 3: National Income and Price Determination</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="unitOne.html">Unit 1</a></li>
+                <li><a href="unitTwo.html">Unit 2</a></li>
+                <li><a href="unitThree.html" class="active">Unit 3</a></li>
+                <li><a href="unitFour.html">Unit 4</a></li>
+                <li><a href="unitFive.html">Unit 5</a></li>
+                <li><a href="unitSix.html">Unit 6</a></li>     
+                <li><a href="households.html">Households</a></li>              
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+
+/* Clear floats after the columns */
+/* Clear floats after the columns */
+html {
+  scroll-behavior: smooth;
+}
+
+/* FRED Graphs
+  Header/title
+  Graph centered
+  Blurb*/
+</style>
+
+<!--Anchor Links-->
+  <div class="anchor-links" style="padding: 20px;">
+    
+     <h3 style="text-align: left;">Topics:</h3>
+      
+    <h4 style="text-align: left;">
+      <a href="#real-gdp">1. Real Gross Domestic Product</a> <br>
+      <a href="#real-investment">2. Real Gross Private Domestic Investment</a> <br>
+      <a href="#real-net-exports">3. Real Net Exports</a> <br>
+      <a href="#net-exports-gdp-share">4. Shares of GDP - Net Exports</a> <br>
+      <a href="#median-cpi">5. Median Consumer Price Index</a> <br>
+      <a href="#industrial-production">6. Industrial Production</a> <br>
+    </h4>
+  </div>
+  
+<!--Back-to-top-button-->
+<a href="#top" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+">
+  ↑ Back to Top
+</a>
+
+<!--Graphs-->
+    
+</style>
+
+
+
+    <div class="column" style="background-color:#EAFFE2; padding: 20px;">
+      <!--Graph ID-->
+      <h2 style="text-align: center;" id="real-gdp">Real Gross Domestic Product: Frequency [Quarterly]</h2>
+      <section style="padding: 1rem;">
+        <div style="width: 100%; overflow-x: auto;">
+          <!-- Inner fixed-width centered container -->
+          <div style="width: 670px; margin: 0 auto;">
+            <!--Graph Link-->
+            <iframe 
+              src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1K927&width=670&height=475"
+              style="width: 100%; height: 525px; border: none; display: block;"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <h3 style="text-align: center;">
+        Real GDP measures the total output of goods and services in the economy. In the AD-AS model, changes in aggregate demand shift output and influence national income levels. This graph helps visualize those fluctuations over time.
+      </h3>
+    </div>
+
+  
+
+    <div class="column" style="background-color:#EAFFE2; padding: 20px;">
+      <!--Graph ID-->
+      <h2 style="text-align: center;" id="real-investment">Real Gross Private Domestic Investment: Frequency [Quarterly]</h2>
+      <section style="padding: 1rem;">
+        <div style="width: 100%; overflow-x: auto;">
+          <!-- Inner fixed-width centered container -->
+          <div style="width: 670px; margin: 0 auto;">
+            <!--Graph Link-->
+            <iframe 
+              src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1Knsl&width=670&height=475"
+              style="width: 100%; height: 525px; border: none; display: block;"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <h3 style="text-align: center;">
+        Real private domestic investment is a component of aggregate demand and tends to rise during expansions and fall during recessions. It reflects business confidence and interest rate sensitivity, making it a core factor in short-run economic fluctuations and AD shifts.
+      </h3>
+    </div>
+
+
+    <div class="column" style="background-color:#EAFFE2; padding: 20px;">
+      <!--Graph ID-->
+      <h2 style="text-align: center;" id="real-net-exports">Real Net Exports of Goods and Services: Frequency [Quarterly]</h2>
+      <section style="padding: 1rem;">
+        <div style="width: 100%; overflow-x: auto;">
+          <!-- Inner fixed-width centered container -->
+          <div style="width: 670px; margin: 0 auto;">
+            <!--Graph Link-->
+            <iframe 
+              src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1KCch&width=670&height=475"
+              style="width: 100%; height: 525px; border: none; display: block;"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <h3 style="text-align: center;">
+        Net exports are calculated as exports minus imports and represent the international component of aggregate demand. Changes in trade balances directly influence GDP and shift the AD curve in the AD-AS model.
+      </h3>
+    </div>    
+
+    
+    <div class="column" style="background-color:#EAFFE2; padding: 20px;">
+      <!--Graph ID-->
+      <h2 style="text-align: center;" id="net-exports-gdp-share">Shares of GDP - Net Exports: Frequency [Quarterly]</h2>
+      <section style="padding: 1rem;">
+        <div style="width: 100%; overflow-x: auto;">
+          <!-- Inner fixed-width centered container -->
+          <div style="width: 670px; margin: 0 auto;">
+            <!--Graph Link-->
+            <iframe 
+              src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1ILr9&width=670&height=475"
+              style="width: 100%; height: 525px; border: none; display: block;"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <h3 style="text-align: center;">
+        This graph shows net exports as a share of GDP, helping visualize how international trade contributes to total economic output. It's useful for analyzing the relative importance of trade in shifting national equilibrium and influencing aggregate demand.
+      </h3>
+    </div>    
+  
+    
+    <div class="column" style="background-color:#EAFFE2; padding: 20px;">
+      <!--Graph ID-->
+      <h2 style="text-align: center;" id="median-cpi">Median Consumer Price Index: Frequency [Monthly]</h2>
+      <section style="padding: 1rem;">
+        <div style="width: 100%; overflow-x: auto;">
+          <!-- Inner fixed-width centered container -->
+          <div style="width: 670px; margin: 0 auto;">
+            <!--Graph Link-->
+            <iframe 
+              src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1KCd0&width=670&height=475"
+              style="width: 100%; height: 525px; border: none; display: block;"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <h3 style="text-align: center;">
+        The median CPI offers a smoother measure of inflation by filtering out extreme price changes. It's a useful alternative to headline CPI when examining underlying inflation trends caused by changes in aggregate demand or supply.
+      </h3>
+    </div>    
+  
+    
+    <div class="column" style="background-color:#EAFFE2; padding: 20px;">
+      <!--Graph ID-->
+      <h2 style="text-align: center;" id="industrial-production">Industrial Production: Frequency [Monthly]</h2>
+      <section style="padding: 1rem;">
+        <div style="width: 100%; overflow-x: auto;">
+          <!-- Inner fixed-width centered container -->
+          <div style="width: 670px; margin: 0 auto;">
+            <!--Graph Link-->
+            <iframe 
+              src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1JT9W&width=670&height=475"
+              style="width: 100%; height: 525px; border: none; display: block;"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <h3 style="text-align: center;">
+        Industrial production tracks the real output of factories, mines, and utilities, and is a solid proxy for the supply side of the economy. Changes here can reflect shifts in short-run aggregate supply and the economy’s productive capacity.
+      </h3>
+    </div>    
+  
+ <footer>
+        <p>&copy; 2024 APMacroCharts. All rights reserved.</p>
+    </footer>
+  
+</body>
+</html>
+
